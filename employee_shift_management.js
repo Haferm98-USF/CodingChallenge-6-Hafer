@@ -13,4 +13,21 @@ let employees =
 function displayEmployeeShifts (employee)
 {
     employee.shifts.forEach((shift) => {console.log('${employee.name} Schedule: ${shift.day}, Hours: ${shift.hours}')});
-}
+};
+
+//Task 3: Create a Function to Assign a New Shift
+
+function assignShift (employee, day, hours)
+{
+    const employee = employees.find((employee) => employee.name === employeeName);
+
+    const scheduledAlready = employee.shifts.some((shift) => shift.day === day);
+        if (scheduledAlready)
+            {
+            console.log('Employee already scheduled for this day');
+            }
+        else 
+            {
+            employee.shifts.push({day, hours});
+            }
+};
