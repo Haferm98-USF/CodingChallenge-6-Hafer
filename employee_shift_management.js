@@ -40,4 +40,12 @@ function calculateTotalHours (employee)
     let totalHours = 0
     totalHours = employee.shifts.reduce((total,shift) => total + shift.hours);
     console.log('This employee worked ${totalHours} this week');
-}
+};
+
+//Task 5: Create a Function to List Employees with Free Days
+
+function listAvailableEmployees (day)
+{
+    let freeEmployee = employee.find((employee) => shift.day != day);
+    console.log(employee.name);
+};
