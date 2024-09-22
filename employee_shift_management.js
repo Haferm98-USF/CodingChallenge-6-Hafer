@@ -7,3 +7,10 @@ let employees =
     {name: Elton, shifts: [{day: 'Wednesday', hours: 6}, {day: 'Sunday', hours: 10}]},
     {name: Amelia, shifts: [{day: 'Thursday', hours: 6}, {day: 'Wednesday', hours: 10}]}, 
 ];
+
+//Task 2: Create a Function to Display Employee Shift Details
+
+function displayEmployeeShifts (employee)
+{
+    employee.shifts.forEach((shift) => {console.log('${employee.name} Schedule: ${shift.day}, Hours: ${shift.hours}')});
+}
